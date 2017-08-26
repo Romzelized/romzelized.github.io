@@ -120,7 +120,6 @@ usually stream my development there.</p>
 			.dreamloLBTable th { border-bottom: 1px solid white;font-weight:bold;margin:0;padding:4px; }
 			.dreamloLBTable td { border-bottom: 1px solid white;margin:0;padding:4px; }
 		</style>
-		<script async src="//jsfiddle.net/4nxf8e99/embed/"></script>
 </section>
 
 </div>
@@ -132,7 +131,14 @@ usually stream my development there.</p>
 </div>
 
 <script>
-// Write current year in copyright text.
+	var script = $("<script />", {
+    		src: "http://dreamlo.com/lb/59a05f106b2b65243c3e4b79/js/10",
+    		type: "script/js"
+  		}
+	);
+
+	$("body").append(script);
+
   document.getElementsByClassName("tm-current-year").value = new Date().getFullYear();
 
 </script>
