@@ -1,5 +1,6 @@
 <title>Romzelized</title>
 <link rel="icon" href="logo.png" type="image/x-icon"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 
@@ -119,7 +120,7 @@ usually stream my development there.</p>
 			.dreamloLBTable th { border-bottom: 1px solid white;font-weight:bold;margin:0;padding:4px; }
 			.dreamloLBTable td { border-bottom: 1px solid white;margin:0;padding:4px; }
 		</style>
-		<script src="https://dreamlo.com/lb/59a05f106b2b65243c3e4b79/js/10" type="text/javascript"></script>
+		<!-- <script src="http://dreamlo.com/lb/59a05f106b2b65243c3e4b79/js/10" type="text/javascript"></script> -->
 </section>
 
 </div>
@@ -131,7 +132,15 @@ usually stream my development there.</p>
 </div>
 
 <script>
+$.ajax({
+    url: "http://dreamlo.com/lb/59a05f106b2b65243c3e4b79/js/10",
 
+    dataType: "jsonp",
+    success: function( response ) {
+        console.log( response ); // server response
+    }
+
+});
 // Write current year in copyright text.
   document.getElementsByClassName("tm-current-year").value = new Date().getFullYear();
 
