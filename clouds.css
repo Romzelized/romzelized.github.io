@@ -1,0 +1,147 @@
+h1, h2, h3, h4, h5, p, div {
+  position: relative;
+  z-index: 999999999999999999999999999999999999999;
+}
+
+img {
+  border-radius: 100vw;
+  z-index: 99999999999;
+}
+
+#img1 {
+  position: absolute;
+  left: 1vw;
+  top: 5vh;
+  width: 10vw;
+}
+#img2 {
+  position: absolute;
+  left: 1vw;
+  top: 60vh;
+  width: 10vw;
+}
+#img3 {
+  position: absolute;
+  right: 1vw;
+  top: 5vh;
+  width: 10vw;
+}
+#img4 {
+  position: absolute;
+  right: 1vw;
+  top: 60vh;
+  width: 10vw;
+}
+
+
+#box{
+  border-style: solid;
+  border-width: 3px;
+  width: 40vw;
+  border-radius: 0vw;
+}
+
+#title {
+  top: 2vh;
+  font-family: mono;
+}
+
+#heart {
+  font-family: omnic;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background:hsla(255,255%,255%,1);
+}
+
+#sk {
+  background-image: linear-gradient(-45deg, hsla(286, 56%, 26%, .5), hsla(286, 56%, 82%, 0.5));
+  perspective:400;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+#clds {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -256px;
+  margin-top: -256px;
+  height: 512px;
+  width: 512px;
+  transform-style: preserve-3d;
+}
+
+#clds div {
+  transform-style: preserve-3d;
+}
+
+.bl {
+  position: absolute;
+  left: 256px;
+  top: 256px;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+
+.clay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 256px;
+  height: 256px;
+  margin-left: -128px;
+  margin-top: -128px;
+  transition: opacity .5s ease-out;
+}
+
+@font-face {
+    font-family: anyk;
+    src: url(anyk.ttf);
+}
+
+@font-face {
+    font-family: omnic;
+    src: url(OmnicSans.ttf);
+}
+
+@font-face {
+    font-family: mono;
+    src: url(mono.ttf);
+}
+
+
+
+/* IMAGE BUILT UP */
+
+canvas {
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}
+
+img {
+    position: absolute;
+    -webkit-transition:opacity .3s;
+    transition:opacity .3s;
+}
+
+#container {
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    left: 0;
+    z-index: 9999999999;
+}
