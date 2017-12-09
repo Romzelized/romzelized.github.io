@@ -1,171 +1,31 @@
 <title>Romzelized</title>
 <link rel="icon" href="logo.png" type="image/x-icon"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!--Romzelized 2017 - onwards-->
-<center>
-  <div id="container">
-    <h1>ROMZELIZED</h1>
-    <h2 id="colourdance">Z</h2>
-    <h3>Indie Game Dev</h3>
-  </div>
-  <div id="container2">
-    <a target="blank" href="https://gamejolt.com/games/megaman-online/231807">Megaman Online</a>
-  </div>
-    <div id="container2">
-    <a target="blank" href="https://gamejolt.com/games/9Lifes/279356">9Lifes</a>
-  </div>
-    <div id="container2">
-    <a target="blank" href="http://romzeldev.6te.net/Elevator/">Elevator</a>
-  </div>
-    <div id="containerspot"></div>
-    <div id="container2">
-    <a target="blank" href="mailto:romzelized@outlook.com">Mail me</a>
-  </div>
-</center>
+<body>
+<div class="container">
+  <div class="neon">Romzelized </div>
+  <div class="flux">Game Dev </div>
+</div>
 
-
+<a target="_blank" href="https://gamejolt.com/games/megaman-online/231807"><figure>
+  <img src="https://romzelized.github.io/images/tm-img-1.jpg"/>
+  <figcaption>MegaMan Online</figcaption>
+</figure></a>
+<a target="_blank" href="http://romzeldev.6te.net/Elevator/"><figure>
+  <img src="https://romzelized.github.io/images/tm-img-2.jpg"/>
+  <figcaption>Elevator</figcaption>
+</figure></a><br/>
+<figure>
+  <img src="https://romzelized.github.io/images/tm-img-3.jpg"/>
+  <figcaption>Ice Cube Divers</figcaption>
+</figure>
+<a target="_blank" href="https://gamejolt.com/games/9Lifes/279356"><figure>
+  <img src="https://romzelized.github.io/images/tm-img-4.jpg"/>
+  <figcaption>9Lifes</figcaption>
+</figure>
+</a>
+</body>
 <link rel="stylesheet" type="text/css" href="clouds.css">
 <script src="clouds.js"></script>
 
 </body></html>
-
-<style>
-body {
-	overflow: hidden;
-	background-color: #102F40;
-	height: 100vh;
-}
-
-::-webkit-scrollbar { 
-    display: none; 
-}
-
-h1 {
-	position: relative;
-    font-family: mono;
-    color: #102F40;
-    top: 40%;
-    font-size: 5vh;
-}
-
-h3 {
-	position: relative;
-    font-family: mono;
-    color: #102F40;
-    top: -35%;
-    font-size: 2vh;
-}
-
-.activate {
-	animation: slide 1s;
-	-webkit-animation-fill-mode: forwards;
-}
-
-.deactivate {
-	animation: slideback 1s;
-	-webkit-animation-fill-mode: forwards;
-}
-
-a {
-	position: relative;
-	text-decoration: none;
-	font-family: mono;
-    color: #102F40;
-    font-size: 5vh;
-    top: 1.5vh;
-}
-
-h2 {
-	position: relative;
-    font-family: omnic;
-    color: #102F40;
-    top: 10vh;
-    font-size: 10vh;
-}
-
-h2:hover {
-	position: relative;
-    font-family: omnic;
-    color: white;
-    top: 10vh;
-    font-size: 10vh;
-}
-
-
-#container {
-	background-color: #FF4A7A;
-	position: relative;
-	width: 50vh;
-	height: 50vh;
-	top: 25vh;
-	z-index: 2;
-}
-
-#container2 {
-	background-color: #E6619F;
-	position: relative;
-	width: 50vh;
-	height: 10vh;
-	top: -25vh;
-	z-index: 1;
-	border-top-right-radius: 100vh;
-	border-bottom-right-radius: 100vh;
-}
-
-#containerspot {
-	background-color: transparent;
-	position: relative;
-	width: 50vh;
-	height: 10vh;
-	top: -25vh;
-	z-index: 1;
-}
-
-@font-face {
-    font-family: anyk;
-    src: url(anyk.ttf);
-}
-
-@font-face {
-    font-family: omnic;
-    src: url(OmnicSans.ttf);
-}
-
-@font-face {
-    font-family: mono;
-    src: url(mono.ttf);
-}
-
-
-@keyframes slide {
-0% {
-   transform: translateX(0%);
-  }
-  100% {
-   transform: translateX(-99%);
-  }
-}
-
-@keyframes slideback {
-0% {
-   transform: translateX(0%);
-  }
-  100% {
-   transform: translateX(99%);
-  }
-}
-
-
-/* Romzelized 2017 - onwards */
-</style>
-
-
-<script
-//Romzelized 2017 - Onwards
-$("#colourdance").click(function() {
-if($('.activate').length < 1)
-  {
-    $('#container').toggleClass('activate');
-  }
-});        
-</script>
