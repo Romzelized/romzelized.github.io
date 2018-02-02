@@ -1,4 +1,4 @@
-<title>Romzelized</title>
+<title>Romzelized | Games</title>
 <link rel="icon" href="../logo.png" type="image/x-icon"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <section id="header">
@@ -7,6 +7,11 @@
             <h1 class="main-heading">Games</h1>
             <div class="main-subheading">They're <span class="word-highlight" style="width: 51px;"><span class="word">Free</span></span>.</div>
         </header>
+    </div>
+    <div class="slides">
+      <img onclick="window.open('https://gamejolt.com/games/megaman-online/231807');" id="iddd" src="https://imgur.com/hPsbWVK.png">
+      <img onclick="window.open('https://gamejolt.com/games/9Lifes/279356');" id="iddd" src="https://imgur.com/V4swUzD.png">
+      <img onclick="window.open('https://gamejolt.com/games/elevator/305645');" id="iddd" src="https://imgur.com/iBT3eje.png">
     </div>
 </section>
 
@@ -17,7 +22,46 @@
 
 
 <style type="text/css">
+    #iddd {
+        height: 10vh;
+    }
 
+
+    .slides {
+    background-color: white;
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    top: 45vh;
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+  @-webkit-keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+  @keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  } 
 body{
 	overflow: hidden;
 }
@@ -67,7 +111,7 @@ a {
     margin: 0 auto;
     max-width: 1070px;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 header {
